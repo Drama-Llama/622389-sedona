@@ -8,7 +8,7 @@
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
-					<img src="#" width="" height="" alt="Логотип Седона">
+					<img src="img/logo-sedona.png" width="138" height="70" alt="Седона">
 				</a>
 				<ul class="site-navigation">
 					<li><a href="#">Информация</a></li>
@@ -87,7 +87,9 @@
 				</div> 
 				<div class="footer-copyright">
 					<span>Website by</span> 
-					<img src="#" width="368" height="153" alt="Логотип Седона">
+					<a href="#">
+					<img img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+					</a>
 				</div>
 			</footer>
 
