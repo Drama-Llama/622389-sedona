@@ -23,6 +23,49 @@
 			
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр для гостиниц</h2>
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+					<fieldset>
+						<legend>Инфраструктура</legend>
+						<ul>
+							<li>
+								<input id="filter-pool" class="visually-hidden filter-checkbox" type="checkbox" name="pool-fltr" checked>
+								<label for="filter-pool">Бассейн</label>
+							</li>
+							<li>
+								<input id="filter-parking" class="visually-hidden filter-checkbox" type="checkbox" name="parking-fltr">
+								<label for="filter-parking">Парковка</label>
+							</li>
+							<li>
+								<input id="filter-internet" class="visually-hidden filter-checkbox" type="checkbox" name="internet-fltr">
+								<label for="filterinternet">Wi-Fi</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья</legend>
+						<ul>
+							<li>
+								<input  d="filter-hotel" class="visually-hidden filter-checkbox" type="checkbox" name="hotel-fltr" checked>
+								<label for="filter-hotel">Гостиница</label>
+							</li>
+							<li>
+								<input id="filter-motel" class="visually-hidden filter-checkbox" type="checkbox" name="motel-fltr" checked>
+								<label for="filter-motel">Мотель</label>
+							</li>
+							<li>
+								<input id="filter-apartments" class="visually-hidden filter-checkbox" type="checkbox" name="apartments-fltr" checked>
+								<label for="filter-apartments">Апартаменты</label>
+							</li>
+						</ul>
+					</fieldset>
+					<div class="filter-cost">
+						<label for="cost">Стоимость в сутки (Р):</label>
+						<span>От 0</span><span>до 3000</span>
+						<input type="range" id="cost" name="cost" min="0" max="3000" step="1">
+					</div>
+					<button type="submit" class="filter-button button">Показать</button>
+
+				</form>
 			</section>
 
 			<section class="sort">
@@ -30,9 +73,9 @@
 				<h3>Найдено: 3</h3>
 				<p></p>
 				<ul class="sort-list">
-					<li class="sort-item-active">По цене</li>
-					<li class="sort-item">По типу</li>
-					<li class="sort-item">По рейтингу</li>
+					<li class="sort-item-active"><a href="#">По цене</a></li>
+					<li class="sort-item"><a href="#">По типу</a></li>
+					<li class="sort-item"><a href="#">По рейтингу</a></li>
 				</ul>
 				
 			</section>
@@ -46,8 +89,8 @@
 							<p class="catalog-kind">Гостиница</p>
 							<p class="catalog-price">От 4000 Р.</p>
 							<p class="">
-								<a class="more" href="#">Подробнее</a>
-								<a class="button" href="#">Забронировать</a>
+								<a class="button more" href="#">Подробнее</a>
+								<a class="button booking" href="#">Забронировать</a>
 							</p>
 							<p class="rating">Рейтинг: 8,5</p>
 						</li>
@@ -57,8 +100,8 @@
 							<p class="catalog-kind">Мотель</p>
 							<p class="catalog-price">От 3000 Р.</p>
 							<p class="">
-								<a class="more" href="#">Подробнее</a>
-								<a class="button" href="#">Забронировать</a>
+								<a class="button more" href="#">Подробнее</a>
+								<a class="button booking" href="#">Забронировать</a>
 							</p>
 							<p class="rating">Рейтинг: 8,9</p>
 						</li>
@@ -68,8 +111,8 @@
 							<p class="catalog-kind">Апартаменты</p>
 							<p class="catalog-price">От 2000 Р.</p>
 							<p class="">
-								<a class="more" href="#">Подробнее</a>
-								<a class="button" href="#">Забронировать</a>
+								<a class="button more" href="#">Подробнее</a>
+								<a class="button booking" href="#">Забронировать</a>
 							</p>
 							<p class="rating">Рейтинг: 9,2</p>
 						</li>
