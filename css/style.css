@@ -1,0 +1,211 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	border: none;
+}
+
+.modal-search-btn,
+.more-btn {
+	background-color: #81b3d2;
+}
+
+.modal-search-btn:hover,
+.modal-search-btn:focus,
+.more-btn:hover,
+.more-btn:focus  {
+	background-color: #669ec0;
+}
+
+.modal-search-btn:active,
+.more-btn:active, {
+	background-color: #5496bd;
+	color:rgba(255, 255, 255, 0.3);
+}
+
+.search-btn,
+.booking-btn {
+	background-color: #766357;
+}
+
+.search-btn:hover,
+.search-btn:focus,
+.booking-btn:hover,
+.booking-btn:focus {
+	background-color: #604e43;
+}
+
+.search-btn:active,
+.booking-btn:active, {
+	background-color: #503e33;
+	color:rgba(255, 255, 255, 0.3);
+}
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+	font-weight: 700;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: #81b3d2;
+}
+
+.site-navigation a:active{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a:visited {
+	color: #766357;
+}
+
+.intro {
+	background-image: url("img/main-page-bg.jpg");
+	background-color: #bdcfda;
+	background-repeat: no-repeat;
+}
+
+.intro {
+	text-align: center;
+}
+
+.features-recomendation-list,
+.features-reasons-list {
+	list-style: none;
+}
+
+.feature-item {
+	text-align: center;
+}
+
+.features h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.feature-special {
+	background-color: #a1c6dd;
+	color: ffffff;
+}
+
+.features-reasons-list {
+	background-color: #e3e3e3;
+}
+
+.search-form {
+	text-align: center;
+}
+
+.location {
+	background-color: #e3e9d3;
+	background-image: url("img/map.jpg");
+	background-repeat: no-repeat;
+}
+
+.main-footer {
+	color: #000000;
+	background-color: rgba(254, 254, 254, 0.9);
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.social-button {
+	color: #82b3d3;
+}
+
+.social-button:hover,
+.social-button:focus, {
+	color: #669ebf;
+}
+
+.social-button:active {
+	color: #5596be;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: #81b3d2;
+  background-color: #ffffff;
+}
+
+.footer-copyright .button:active {
+  color: #d1d0d0;
+  background-color: #ffffff;
+}
+
+.modal-item input {
+	font: inherit;
+	color: #000000;
+	font-weight: 700;
+
+	background-color: #f2f2f2;
+}
+
+.modal-item input:hover {
+	background-color: #ebebeb;
+}
+
+.modal-item input:focus {
+	background-color: transparent;
+	border: 2px solid #e5e5e5;;
+}
+
+.calendar-btn {
+	background-color: #cbcbcb;
+}
+
+.amount-btn {
+	color: #a9a9a9;
+}
+
+.amount-btn:hover,
+.amount-btn:focus,
+.calendar-btn:hover,
+.calendar-btn:focus {
+	color: #000000;
+}
+
+.amount-btn:active
+.calendar-btn:active {
+	color: #80b3d2;
+}

@@ -3,6 +3,9 @@
 	<head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -22,7 +25,7 @@
 		<main>
 			<section class="intro">
 				<h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-				<img src="" alt="">
+				<img src="img/intro-lettering.png" alt="Welcome to the gorgeous Sedona">
 			</section> 
 
 			<section class="features">
@@ -30,47 +33,47 @@
 				<h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-				<div>
+				<div class="feature-item feature-special">
 					<h3>Настоящий городок</h3>
-					<span>№1</span>
+					<span class="feature-item">№1</span>
 					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 					<img src="img/main-hotel-1200-1.jpg" width="800" height="256" alt="Седона">
 				</div>
 				
-				<ul class="features-recomendation">
-					<li>
+				<ul class="features-recomendation-list">
+					<li class="feature-item">
 						<h3>Жильё</h3>
 						<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 					</li>
-					<li>
+					<li class="feature-item">
 						<h3>Еда</h3>
 						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</li>
-					<li>
+					<li class="feature-item">
 						<h3>Сувениры</h3>
 						<p>Не только китайского, но и местного производства!</p>
 					</li>
 				</ul>
 				
-				<div>
+				<div class="feature-item feature-special">
 					<img src="img/main-hotel-1200-2.jpg" width="800" height="256" alt="Седона">
 					<h3>Там есть Мост дьявола</h3>
 					<span>№2</span>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 				
-				<ul class="features-reasons">
-					<li>
+				<ul class="features-reasons-list">
+					<li class="feature-item">
 						<h3>Небольшая площадь</h3>
 						<span>№3</span>
 						<p>Все достопримечательности находятся очень близко</p>
 					</li>
-					<li>
+					<li class="feature-item">
 						<h3>Красивая дорога</h3>
 						<span>№4</span>
 						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!/p>
 					</li>
-					<li>
+					<li class="feature-item">
 						<h3>Мало туристов</h3>
 						<span>№5</span>
 						<p>Большинство едет в гранд каньон и толпится там</p>
@@ -81,57 +84,57 @@
 			<section class="search-form">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<button class="button search" type="button">Поиск гостинницы в Седоне</button>
+				<button class="button search-btn" type="button">Поиск гостинницы в Седоне</button>
 			</section>
 
 			<section class=location>
 				<h2 class="visually-hidden">Где мы находимся</h2>
 			</section>
 
-	</main>
+		</main>
 		
 		<footer class="main-footer">
-		<p class="shout-out">
-			<b>#visitsedona</b>
-		</p>
-		<div class="footer-social">
-			<a class="social-button" href="#">Вконтакте</a>
-			<a class="social-button" href="#">Фейсбук</a>
-			<a class="social-button" href="#">Инстаграм</a>
-		</div> 
-		<div class="footer-copyright">
-			<span>Website by</span> 
-			<a href="#">
-			<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
-			</a>
-		</div>
+			<p class="shout-out">
+				<b>#visitsedona</b>
+			</p>
+			<div class="footer-social">
+				<a class="social-button" href="#">Вконтакте</a>
+				<a class="social-button" href="#">Фейсбук</a>
+				<a class="social-button" href="#">Инстаграм</a>
+			</div> 
+			<div class="footer-copyright">
+				<span>Website by</span> 
+				<a class='button" href="#">
+				<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+				</a>
+			</div>
 		</footer>
 
 		<section class="modal">
 			<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-				<p class="calendar">
+				<p class="modal-item">
 					<label for="arrival-date">Дата заезда</label>
-					<input id="arrival-date" type="text" name="arrival" placeholder="24.04.2017">
-					<button class="button calendar-btn" type="button">Календарь</button>
+					<input id="arrival-date" type="text" name="arrival" value="" placeholder="24.04.2017">
+					<button class="calendar-btn" type="button">Календарь</button>
 				</p>
-				<p class="calendar">
+				<p class="cmodal-item">
 					<label for="date-of-departure">Дата выезда</label>
-					<input id="date-of-departure" type="text" name="departure" placeholder="4.07.2017">
-					<button class="button calendar-btn" type="button">Календарь</button>
+					<input id="date-of-departure" type="text" name="departure" value="" placeholder="4.07.2017">
+					<button class="calendar-btn" type="button">Календарь</button>
 				</p>
 				<p class="modal-item">
 					<label for="amount-of-adults">Взрослые</label>
-					<button class="amount-reduce" type="button">Уменьшить количество</button>
-					<input id="amount-of-adults" type="number" name="adult" placeholder="2">
-					<button class="amount-increase" type="button">Увеличить количество</button>
+					<button class="amount-btn amount-reduce" type="button">Уменьшить количество</button>
+					<input id="amount-of-adults" type="number" name="adult" value="" placeholder="2">
+					<button class="amount-btn amount-increase" type="button">Увеличить количество</button>
 				</p>
 				<p class="modal-item">
 					<label for="amount-of-kids">Дети</label>
-					<button class="amount-reduce" type="button">Уменьшить количество</button>
-					<input id="amount-of-kids" type="number" name="kids" placeholder="0">
-					<button class="amount-increase" type="button">Увеличить количество</button>
+					<button class="amount-btn amount-reduce" type="button">Уменьшить количество</button>
+					<input id="amount-of-kids" type="number" name="kids" value="" placeholder="0">
+					<button class="amount-btn amount-increase" type="button">Увеличить количество</button>
 				</p>
-				<button class="button modal-search" type="submit">Найти</button>
+				<button class="button modal-search-btn" type="submit">Найти</button>
 			</form>
 		</section>
 	</body>
