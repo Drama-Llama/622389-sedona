@@ -35,7 +35,7 @@ a {
 .modal-search-btn:hover,
 .modal-search-btn:focus,
 .more-btn:hover,
-.more-btn:focus  {
+.more-btn:focus {
 	background-color: #669ec0;
 }
 
@@ -165,13 +165,13 @@ a {
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
-  color: #81b3d2;
-  background-color: #ffffff;
+	color: #81b3d2;
+	background-color: #ffffff;
 }
 
 .footer-copyright .button:active {
-  color: #d1d0d0;
-  background-color: #ffffff;
+	color: #d1d0d0;
+	background-color: #ffffff;
 }
 
 .modal-item input {
@@ -230,9 +230,9 @@ a {
 
 .filters ul,
 .filter-cost {
-  list-style: none;
-  line-height: 21px;
-  color:#ffffff;
+	list-style: none;
+	line-height: 21px;
+	color:#ffffff;
 }
 
 .filter-button {
@@ -294,12 +294,12 @@ a {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
