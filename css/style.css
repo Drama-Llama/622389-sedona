@@ -27,6 +27,13 @@ a {
 	border: none;
 }
 
+.search-btn,
+.modal-search-btn {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+
 .modal-search-btn,
 .more-btn {
 	background-color: #81b3d2;
@@ -64,7 +71,6 @@ a {
 }
 
 .main-navigation {
-	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
 
@@ -99,6 +105,11 @@ a {
 	background-repeat: no-repeat;
 }
 
+.features-title {
+	line-height: 26px;
+}
+
+
 .intro,
 .features{
 	text-align: center;
@@ -131,6 +142,12 @@ a {
 	text-align: center;
 }
 
+.search-form h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
 .location {
 	background-color: #e3e9d3;
 	background-image: url("../img/map.jpg");
@@ -141,6 +158,11 @@ a {
 	color: #000000;
 	background-color: rgba(254, 254, 254, 0.9);
 }
+
+.shout-out b {
+	font-size: 21px;
+	line-height: 26px;
+} 
 
 .footer-social {
 	text-align: center;
@@ -163,6 +185,10 @@ a {
 	color: #5596be;
 }
 
+.footer-copyright span {
+	line-height: 26px;
+}
+
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
 	color: #81b3d2;
@@ -174,10 +200,12 @@ a {
 	background-color: #ffffff;
 }
 
-.modal-item input {
+.modal-item input,
+.modal-item label {
 	font: inherit;
 	color: #000000;
 	font-weight: 700;
+	line-height: 26px;
 
 	background-color: #f2f2f2;
 }
@@ -188,12 +216,14 @@ a {
 
 .modal-item input:focus {
 	background-color: transparent;
-	border: 2px solid #e5e5e5;;
+	border: 2px solid #e5e5e5;
 }
 
+/*
 .calendar-btn {
 	background-color: #cbcbcb;
 }
+*/
 
 .amount-btn {
 	color: #a9a9a9;
@@ -248,11 +278,18 @@ a {
 	border: none;
 }
 
+.sort h3 {
+	font-size: 21px;
+	line-height: 26px;
+}
+
 .sort-list {
 	list-style: none;
 }
 
 .sort-list a {
+	font-size: 12px;
+	line-height: 18px; 
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #81b3d2;
 }
