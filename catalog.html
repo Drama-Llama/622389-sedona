@@ -31,10 +31,7 @@
 				<h2 class="visually-hidden">Фильтр для гостиниц</h2>
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 					
-					<div class="filters-column">
-						<div class="filters-wrapper">
-						<div class="filters-column-one">
-							<fieldset>
+					<fieldset>
 								<legend>Инфраструктура</legend>
 								<ul class="filter-cost">
 									<li>
@@ -51,8 +48,6 @@
 									</li>
 								</ul>
 							</fieldset>
-						</div>
-						<div class="filters-column-two">
 							<fieldset>
 								<legend>Тип жилья</legend>
 								<ul class="filter-cost">
@@ -70,22 +65,14 @@
 									</li>
 								</ul>
 							</fieldset>
-						</div>
-						</div>
-						
-						<div class="filters-column-three">
 							<div class="filter-cost">
 								<label for="cost">Стоимость в сутки (Р):</label>
 								<span>От 0</span><span>до 3000</span>
 								<input type="range" id="cost" name="cost" min="0" max="3000" step="1" value="">
-							</div>
 							<button type="submit" class="filter-button button">Показать</button>
-						</div>
-					
-					</div>
-				</form>
-				
-			</section>
+							</div>
+						</form>
+					</section>
 
 			<section class="sort">
 				<h2 class="visually-hidden">Результаты поиска</h2>
@@ -101,8 +88,8 @@
 					</div>
 					<div class="sort-column">
 						<ul class="sort-list">
-							<li>По возрастанию</li>
-							<li>По убыванию</li>
+							<li><span class="visually-hidden">По возрастанию</span></li>
+							<li><span class="visually-hidden">По убыванию</span></li>
 						</ul>
 					</div>
 				</div>
@@ -112,24 +99,28 @@
 				<h2 class="visually-hidden">Список гостиниц</h2>
 					<ul class="catalog-list">
 						<li class="catalog-item">
-							<div>
-								<img src="img/hotel-1.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
+							<img src="img/hotel-1.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa">
+							<div class="catalog-item-column">
 								<h3 class="name-hotel"><a href="#">Amara Resort & Spa</a></h3>
-								<p class="catalog-kind">Гостиница</p>
-								<p class="catalog-price">От 4000 Р.</p>
-								<p class="">
-									<a class="button more-btn" href="#">Подробнее</a>
-									<a class="button booking-btn" href="#">Забронировать</a>
-								</p>
+								<div class="catalog-type">
+									<p class="catalog-kind">Гостиница</p>
+									<p class="catalog-price">От 4000 Р.</p>
+								</div>
+									<p class="">
+										<a class="button more-btn" href="#">Подробнее</a>
+										<a class="button booking-btn" href="#">Забронировать</a>
+									</p>
 							</div>
 							<p class="rating">Рейтинг: 8,5</p>
 						</li>
 						<li class="catalog-item">
-							<div>
-								<img src="img/hotel-2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+							<img src="img/hotel-2.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
+							<div class="catalog-item-column">
 								<h3 class="name-hotel"><a href="#">Desert Quail Inn</a></h3>
-								<p class="catalog-kind">Мотель</p>
-								<p class="catalog-price">От 3000 Р.</p>
+								<div class="catalog-type">
+									<p class="catalog-kind">Мотель</p>
+									<p class="catalog-price">От 3000 Р.</p>
+								</div>
 								<p class="">
 									<a class="button more-btn" href="#">Подробнее</a>
 									<a class="button booking-btn" href="#">Забронировать</a>
@@ -138,11 +129,13 @@
 							<p class="rating">Рейтинг: 8,9</p>
 						</li>
 						<li class="catalog-item">
-							<div>
-								<img src="img/hotel-3.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+							<img src="img/hotel-3.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+							<div class="catalog-item-column">
 								<h3 class="name-hotel"><a href="#">Villas at Poco Diablo</a></h3>
-								<p class="catalog-kind">Апартаменты</p>
-								<p class="catalog-price">От 2000 Р.</p>
+								<div class="catalog-type">
+									<p class="catalog-kind">Апартаменты</p>
+									<p class="catalog-price">От 2000 Р.</p>
+								</div>
 								<p class="">
 									<a class="button more-btn" href="#">Подробнее</a>
 									<a class="button booking-btn" href="#">Забронировать</a>
@@ -158,9 +151,9 @@
 					<b>#visitsedona</b>
 				</p>
 				<div class="footer-social">
-					<a class="social-button" href="#">Вконтакте</a>
-					<a class="social-button" href="#">Фейсбук</a>
-					<a class="social-button" href="#">Инстаграм</a>
+					<a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
+					<a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a>
+					<a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a>
 				</div> 
 				<div class="footer-copyright">
 					<span>Website by</span> 
