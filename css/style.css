@@ -665,17 +665,21 @@ background-color: #ffffff;
 	left: 164px;
 }
 
-.adults-red::before:hover,
-.kids-red::before:focus,
-.adults-inc::before:hover,
-.adults-inc::before:focus{
+.adults-red:hover::before,
+.kids-red:focus::before,
+.adults-inc:hover::before,
+.adults-inc:focus::before,
+.adults-inc:hover::after,
+.adults-inc:focus::after{
 	background-color: #000000;
 }
 
-.kids-red::before:active,
-.adults-red::before:active,
-.kids-inc::before:active,
-.adults-inc::before:active {
+.kids-red:active::before,
+.adults-red:active::before,
+.kids-inc:active::before,
+.adults-inc:active::before
+.adults-inc:active::after,
+.adults-inc:active::after {
 	background-color: #80b3d2;
 }
 
