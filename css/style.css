@@ -900,6 +900,20 @@ fieldset {
 	background-position: 0 0;
 }
 
+.filter-checkbox:not(:checked):disabled  + label::before {
+	content: "";
+	position: absolute;
+	left: -38px;
+	top: 0;
+
+	width: 25px;
+	height: 25px;
+
+	background-image: url("../img/checkbox-off-disabled.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
 .filter-checkbox:checked + label::after {
 	content: "";
 
@@ -914,6 +928,22 @@ fieldset {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
+
+.filter-checkbox:checked:disabled  + label::after {
+	content: "";
+
+	position: absolute;
+	left: -38px;
+	top: 0;
+
+	width: 25px;
+	height: 25px;
+	
+	background-image: url("../img/checkbox-on-disabled.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
 
 .filter-range {
 	width: 320px;
