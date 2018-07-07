@@ -17,8 +17,10 @@ body {
 }
 
 .general-container {
-	max-width: 1200px;
+	position: relative;
+	width: 1200px;
 	margin: 0 auto;
+	background-color: #ffffff;
 	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -106,8 +108,8 @@ img {
 }
 
 .modal-search-btn {
-	margin-top: 56px;
-	padding: 13px 0 19px;
+	margin-top: 30px;
+	padding: 16px 0 19px;
 }
 
 .main-navigation {
@@ -143,13 +145,11 @@ img {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
 	flex-wrap: wrap;
 	width: 1200px;
-	min-height: 54px;
 	margin: 0;
-	padding: 0;
-	
+	padding: 15px 0 13px;
+
 	list-style: none;
 }
 
@@ -158,24 +158,28 @@ img {
 	box-sizing: border-box;
     width: 200px;
     padding-left: 71px;
+    margin-right: 113px;
 }
 
 .site-navigation li:nth-child(2) {
 	box-sizing: border-box;
-    width: 400px;
-    padding-left: 112px;
+    width: 200px;
+    margin-right: auto;
 }
 
 .site-navigation li:nth-child(3) {
 	box-sizing: border-box;
-    width: 400px;
-    padding-left: 197px;
+    width: 200px;
+    margin-left: auto;
+    text-align: right;
 }
 
 .site-navigation li:last-child {
 	box-sizing: border-box;
     width: 200px;
-    padding-left: 47px;
+    text-align: right;
+    padding-right: 71px;
+    margin-left: 113px;
 }
 
 
@@ -289,7 +293,7 @@ img {
 	padding: 20px;
 	padding-bottom: 20px;
 	font-size: 21px;
-	line-height: 21px;
+	line-height: 21px;	
 }
 
 .feature-introduction h3{
@@ -299,8 +303,10 @@ img {
 	margin: 0 auto;
 	padding:0;
 	padding-bottom: 15px;
+	color: #000000;
 }
 .features-recomendation-list h3{
+	color: #000000;
 	padding-top: 15px;
 	padding-bottom: 20px;
 	padding-left: 20px;
@@ -419,6 +425,7 @@ background-color: #ffffff;
 
 .features-reasons-list h3 {
 	padding-top: 5px;
+	color: #000000;
 }
 
 .search-form {
@@ -430,6 +437,7 @@ background-color: #ffffff;
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
+	color: #000000;
 }
 
 .search-form p {
@@ -486,6 +494,7 @@ background-color: #ffffff;
 .shout-out b {
 	font-size: 21px;
 	line-height: 26px;
+	color: #000000;
 	margin-top: 10px;
 } 
 
@@ -494,12 +503,12 @@ background-color: #ffffff;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 150px;
-	text-align: flex-start;	
+	text-align: start;	
 	list-style: none;
 	margin:0 auto;
 	padding: 0;
-	padding-top: 10px;
-	padding-left: 5px;
+	padding-top: 9px;
+	padding-left: 10px;
 	padding-bottom: 10px;
 }
 
@@ -537,13 +546,15 @@ background-color: #ffffff;
 	justify-content: center;
 	width: 205px;
 	margin: 0;
-	margin-right: 98px;
+	margin-right: 100px;
 }
 
 .footer-copyright span {
 	margin: 0 auto;
 	padding: 0;
+	padding-bottom: 3px;
 	line-height: 26px;
+	color: #000000;
 }
 
 .footer .primary-fc{
@@ -552,6 +563,7 @@ background-color: #ffffff;
 	margin-left: 5px;
 	margin-right: 9px;
 	margin-top: 1px;
+	padding: 0px;
 }
 
 .footer-copyright .button:hover path,
@@ -581,10 +593,12 @@ background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
 	margin:0 auto;
-	padding: 52px 58px;
+	padding: 50px 59px;
 }
 
 .modal-item{
+	display: flex;
+	align-items: flex-start;
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -592,11 +606,13 @@ background-color: #ffffff;
 
 
 .modal-item input[type="text"]{
-	margin-left: 22px;
+	margin-left: 20px;
 	box-sizing: border-box;
 	width: 344px;
+	min-height: 40px;
 	padding-top: 5px;
-	padding-left: 10px;
+	padding-bottom: 1px;
+	padding-left: 12px;
 	box-shadow: none;
 	border: 2px solid #f2f2f2;
 }
@@ -604,27 +620,40 @@ background-color: #ffffff;
 .modal-item input[type="number"]{
 	margin: 0 0;
 	margin-left: 38px;
+	
 	box-sizing: border-box;
 	width: 114px;
-	padding: 3px 5px;
-	padding-left: 52px;
+	min-height: 38px;	
+	
+	padding: 5px 6px;
+	padding-left: 51px;
 	box-shadow: none;
 	border: 2px solid #f2f2f2;
 }
 
 .modal-form input::placeholder {
 	opacity: 1;
+	font-size: 14px;
+	line-height: 26px;
 	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .modal-item input,
 .modal-item label {
-	margin-bottom: 33px;
+	margin-bottom: 28px;
+	padding-top: 10px;
+	padding-right: 2px;
 	font: inherit;
 	color: #000000;
 	font-weight: 700;
 	line-height: 26px;
 	cursor: pointer;	
+}
+
+.modal-form .departure input[type="text"]{
+	margin-left: 18px;
 }
 
 
@@ -641,10 +670,11 @@ background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 }
 
+
 .calendar-btn {
 	position: absolute;
-	top: 7px;
-	right: 5px;
+	top: 10px;
+	right: 3px;
 	border: none;
 	background: none;
 
@@ -674,6 +704,10 @@ background-color: #ffffff;
 	cursor: pointer;
 }
 
+.adults-fltr input[type="number"] {
+	margin: 0;
+	margin-left: 35px;
+}
 
 .kids-fltr input[type="number"] {
 	margin: 0;
@@ -699,7 +733,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .kids-minus {
 	position: absolute;
-	top: 17px;
+	top: 20px;
 	left: 132px;
 	background: none;
 	border: none;	
@@ -707,15 +741,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .adults-minus{
 	position: absolute;
-	top: 17px;
-	left: 126px;
+	top: 20px;
+	left: 125px;
 	background: none;
 	border: none;
 }
 
 .adults-plus{
 	position: absolute;
-	top: 17px;
+	top: 20px;
 	left: 200px;
 
 	background: none;
@@ -724,7 +758,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .kids-plus{
 	position: absolute;
-	top: 18px;
+	top: 20px;
 	left: 207px;
 
 	background: none;
@@ -738,7 +772,7 @@ input[type=number]::-webkit-outer-spin-button {
 	content: "";
 	
 	position: absolute;
-	top: 0px;
+	top: 0;
 	left: 0;
 	width: 11px;
 	height: 3px;
@@ -777,7 +811,7 @@ input[type=number]::-webkit-outer-spin-button {
 .kids-minus:active::before,
 .adults-minus:active::before,
 .kids-plus:active::before,
-.adults-plus:active::before
+.adults-plus:active::before,
 .kids-plus:active::after,
 .adults-plus:active::after {
 	background-color: #80b3d2;
@@ -839,7 +873,7 @@ fieldset {
 }
 
 .flr-type {
-	margin-left: 12px;
+	margin-left: 13px;
 	padding: 0;
 }
 
@@ -885,6 +919,7 @@ fieldset {
 	width: 320px;
 	margin: 0px auto;
 	margin-left: 10px;
+	padding-top: 3px;
 
 	color: #ffffff;
 	text-transform: uppercase;
@@ -942,6 +977,7 @@ fieldset {
 
 .price-controls input {
 	width: 50px;
+	min-height: 35px;
 	margin: 0;
 
 	color: inherit;
@@ -1005,6 +1041,7 @@ fieldset {
 	line-height: 20px;
 	color: #ffffff;
 	text-transform: uppercase;
+	font-weight: 400;
 
 	background: transparent;
 	border: 2px solid #ffffff;
@@ -1056,11 +1093,13 @@ fieldset {
 .sort-column h3 {
 	padding: 0;
 	padding-right: 45px;
+	color: #000000;
 }
 
 .sort-column p{
 	padding: 0;
 	padding-right: 37px;
+	color: #000000;
 }
 
 .sort-list {
@@ -1075,7 +1114,8 @@ fieldset {
 }
 
 .sort-list li{
-	margin-padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .direction path {
@@ -1156,14 +1196,17 @@ fieldset {
 	content: "";
 	
 	position: absolute;
-	left: 0px;
-	top: 0px;
 
 	margin: 0 auto;
 	padding: 0;
 	width:100%;
 	height: 1px;
 	background-color: #e5e5e5;
+}
+
+.catalog-item::before{
+	left: 0px;
+	top: 0px;
 }
 
 .catalog-item:last-child::after{
