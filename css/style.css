@@ -606,7 +606,7 @@ background-color: #ffffff;
 
 
 .modal-item input[type="text"]{
-	margin-left: 20px;
+	margin-left: auto;
 	box-sizing: border-box;
 	width: 344px;
 	min-height: 40px;
@@ -653,7 +653,7 @@ background-color: #ffffff;
 }
 
 .modal-form .departure input[type="text"]{
-	margin-left: 18px;
+	margin-left: auto;
 }
 
 
@@ -729,6 +729,15 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
 	-webkit-appearance: none; 
 	margin: 0; 
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+	appearance: none;
+}
+
+input[type=number] {
+	appearance: none;
 }
 
 .kids-minus {
@@ -829,7 +838,7 @@ input[type=number]::-webkit-outer-spin-button {
 	background-repeat: no-repeat;
 }
 
-form {
+.filters form {
 	display: flex;
 }
 
@@ -837,11 +846,9 @@ form {
 	border: none;
 	margin:0;
 	margin-right:100px; 
-}
-
-fieldset {
 	padding: 0;
 }
+
 
 .filter legend {
 	margin-bottom: 26px;
@@ -944,6 +951,15 @@ fieldset {
 	background-position: 0 0;
 }
 
+.filter-checkbox:disabled + label {
+	color: #6a6a6a;
+}
+
+.filter-checkbox:focus + label::before,
+.filter-checkbox:focus + label::after{
+	outline: 2px dotted #81b3d2;
+	outline-offset: 2px;
+}
 
 .filter-range {
 	width: 320px;
@@ -1051,7 +1067,7 @@ fieldset {
 }
 
 .range-toggle:hover {
-	background: #1c4f80;
+	transform: scale(1.1);
 }
 
 .range-toggle-min {
