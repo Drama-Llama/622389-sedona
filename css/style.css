@@ -467,8 +467,8 @@ background-color: #ffffff;
 	z-index: 1;
 }
 
-.location frame {
-	border: none;
+.location iframe {
+	border: 0;
 	box-shadow: none;	
 }
 	
@@ -713,7 +713,7 @@ background-color: #ffffff;
 }
 
 .modal {
-	display: none;
+	display: block;
 	position: absolute;
 	margin: 0 auto;
 	margin-left: -288px;
@@ -729,7 +729,7 @@ background-color: #ffffff;
 }
 
 .modal-hide {
-	display: block;
+	display: none;
 }
 
 .modal-animation {
@@ -934,7 +934,7 @@ input[type='number'] {
 
 input[type=number] {
 	-webkit-appearance: none;
-	   -moz-appearance: none;
+		-moz-appearance: none;
 			appearance: none;
 }
 

@@ -7,6 +7,8 @@ var departure = popup.querySelector("[name=departure]");
 var adult = popup.querySelector("[name=adult]")
 var kids = popup.querySelector("[name=kids]")
 
+popup.classList.add("modal-hide");
+
 var isStorageSupport = true;
 	var storage = "";
 
