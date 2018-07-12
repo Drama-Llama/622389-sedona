@@ -1,6 +1,6 @@
 var link = document.querySelector(".open-btn");
 var popup = document.querySelector(".modal");
-		
+
 var form = popup.querySelector("form");
 var arrival = popup.querySelector("[name=arrival]");
 var departure = popup.querySelector("[name=departure]");
@@ -23,7 +23,6 @@ link.addEventListener("click", function (evt) {
 	popup.classList.toggle("modal-hide");
 	popup.classList.add("modal-animation");
 	popup.classList.remove("modal-error");
-			
 	if (storage) {
 		adult.value = storage;
 		kids.value = storage;
@@ -38,9 +37,7 @@ form.addEventListener("submit", function (evt) {
 		popup.offsetWidth = popup.offsetWidth;
 		popup.classList.add("modal-error");
 	}
-		else {
-		if (isStorageSupport) {
+	else if (isStorageSupport) {
 			localStorage.setItem("adult", adult.value && "kids", kids.value);
-		}
 	}
 });
