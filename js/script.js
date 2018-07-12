@@ -38,6 +38,6 @@ form.addEventListener("submit", function (evt) {
 		popup.classList.add("modal-error");
 	}
 	else if (isStorageSupport) {
-			localStorage.setItem("adult", adult.value && "kids", kids.value);
+		localStorage.setItem("adult", adult.value && "kids", kids.value);
 	}
 });
